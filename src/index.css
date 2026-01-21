@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN BOX */
+.box {
+  background: #ffffff;
+  width: 420px;
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* TITLE */
+.box h1,
+.box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* QUESTION */
+.box p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* START / RESTART BUTTON */
+button:not(.option) {
+  background: #667eea;
+  color: white;
+}
+
+button:not(.option):hover {
+  background: #5563d9;
+}
+
+/* OPTIONS */
+.option {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.option:hover {
+  background: #e0e0e0;
+}
+
+/* CORRECT & WRONG */
+.option.correct {
+  background: #4caf50;
+  color: white;
+}
+
+.option.wrong {
+  background: #f44336;
+  color: white;
+}
+
+.option:disabled {
+  cursor: not-allowed;
+}
+
+/* TIMER */
+.box p:last-of-type {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #667eea;
+  transition: width 0.4s ease;
+}
